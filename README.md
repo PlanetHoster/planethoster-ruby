@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PlanetHoster/planethoster-node.svg?branch=master)](https://travis-ci.org/PlanetHoster/planethoster-node)
+
 # PlanethosterApi
 
 PlanetHoster API gem is a work in progess
