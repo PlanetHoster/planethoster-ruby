@@ -28,15 +28,17 @@ Or install it yourself as:
 ## Usage
 
 You need to configure api credentials.
-
-    PlanethosterApi.configuration do |config|
-        config.api_user = API_USER
-        config.api_key = API_KEY
-    end
+```ruby
+PlanethosterApi.configuration do |config|
+    config.api_user = API_USER
+    config.api_key = API_KEY
+end
+```
 
 Then, you can test api connection with this code
-
-    PlanethosterApi.domain.test_connection
+```ruby
+PlanethosterApi.domain.test_connection
+```
 
 ## Possible functions
 
