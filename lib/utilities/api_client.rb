@@ -47,12 +47,12 @@ module Utilities
           @req.add_field "#{k}", "#{v}" 
         end
 
-        @res = HTTP.start(@uri.hostname, @uri.port) {|http|
+        @res = HTTP.start(@uri.hostname, @uri.port, use_ssl: true) {|http|
           http.request(@req)
         }
 
         result = JSON.parse(@res.body)
-        result[:code] = @res.code
+        result[:http_code] = @res.code
 
         result
       end

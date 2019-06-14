@@ -22,17 +22,28 @@ module PlanethosterApi
   end
 
   def self.domain
-    PlanethosterApi::Domain.new(
-      @configuration.api_user,
-      @configuration.api_key
-    )
+    creds_wrap do
+      PlanethosterApi::Domain.new(
+        @configuration.api_user,
+        @configuration.api_key
+      )
+    end
   end
 
   def self.world
-    PlanethosterApi::World.new(
-      @configuration.api_user,
-      @configuration.api_key
-    )
+    creds_wrap do
+      PlanethosterApi::World.new(
+        @configuration.api_user,
+        @configuration.api_key
+      )
+    end
+  end
+
+  def self.creds_wrap
+    if @configuration.nil?
+      raise "api_key and api_user are not defined - Please refer to documentation and configure credentials: https://github.com/PlanetHoster/planethoster-ruby"
+    end
+    yield
   end
 
 end
