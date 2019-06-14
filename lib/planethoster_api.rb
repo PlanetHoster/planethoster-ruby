@@ -39,6 +39,7 @@ module PlanethosterApi
     end
   end
 
+  private
   def self.creds_wrap
     if @configuration.nil?
       raise "api_key and api_user are not defined - Please refer to documentation and configure credentials: https://github.com/PlanetHoster/planethoster-ruby"
