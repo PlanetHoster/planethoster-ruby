@@ -4,7 +4,7 @@ module Utilities
   class ApiClient
     include Net
 
-    BASE_URL='http://localhost:3005'
+    BASE_URL='https://api.planethoster.net'
     
     def initialize(api_user, api_key)
       @headers = {
