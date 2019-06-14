@@ -16,7 +16,7 @@ module PlanethosterApi
       save_nameservers: [:post, '/save-nameservers'],
       save_ph_dns_records: [:post, '/save-ph-dns-records'],
       save_registrar_lock: [:post, '/save-registrar-lock'],
-      email_epp_copde: [:post, '/email-epp-code'],
+      email_epp_code: [:post, '/email-epp-code'],
       register_domain: [:post, '/register-domain'],
       renew_domain: [:post, '/renew-domain'],
       transfer_domain: [:post, '/transfer-domain'],
