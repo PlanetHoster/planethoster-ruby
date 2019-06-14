@@ -30,5 +30,4 @@ RSpec.describe PlanethosterApi do
     domain = PlanethosterApi.world
     expect(domain.class).to eq(PlanethosterApi::World)
   end
-  
 end
