@@ -27,8 +27,10 @@ Or install it yourself as:
 
 ## Usage
 
-You need to configure api credentials.
+You need to initialize api credentials.
 ```ruby
+require 'planethoster_api'
+
 PlanethosterApi.configuration do |config|
     config.api_user = API_USER
     config.api_key = API_KEY
