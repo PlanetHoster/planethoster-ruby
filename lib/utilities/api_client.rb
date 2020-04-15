@@ -8,8 +8,8 @@ module Utilities
     
     def initialize(api_user, api_key)
       @headers = {
-        'X_API_USER': api_user,
-        'X_API_KEY': api_key,
+        'X-API-USER': api_user,
+        'X-API-KEY': api_key,
         'content-type': 'text/json'
       }
       @uri = nil
