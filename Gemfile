@@ -5,6 +5,6 @@ gemspec
 gem 'rake'
 
 group :test do
-  gem 'rspec',    '~> 3.0'
-  gem 'rspec_junit_formatter'
+  gem 'rspec', '> 0'
+  gem 'rspec_junit_formatter', '> 0'
 end

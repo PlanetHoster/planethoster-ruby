@@ -30,8 +30,8 @@ PLATFORMS
 DEPENDENCIES
   planethoster_api!
   rake
-  rspec (~> 3.0)
-  rspec_junit_formatter
+  rspec (> 0)
+  rspec_junit_formatter (> 0)
 
 BUNDLED WITH
    2.3.23
