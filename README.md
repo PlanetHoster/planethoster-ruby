@@ -1,5 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/PlanetHoster/planethoster-ruby/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/PlanetHoster/planethoster-ruby/tree/master)
 ![Gem](https://img.shields.io/gem/v/planethoster_api.svg)
-[![Build Status](https://travis-ci.org/PlanetHoster/planethoster-node.svg?branch=master)](https://travis-ci.org/PlanetHoster/planethoster-node)
 ![Gem](https://img.shields.io/gem/dt/planethoster_api.svg)
 
 # Planethoster-ruby
