@@ -1,4 +1,10 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in planethoster_api.gemspec
 gemspec
+
+gem 'rake'
+
+group :test do
+  gem 'rspec',    '~> 3.0'
+  gem 'rspec_junit_formatter'
+end
