@@ -1,6 +1,6 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/PlanetHoster/planethoster-ruby/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/PlanetHoster/planethoster-ruby/tree/master)
-![Gem](https://img.shields.io/gem/v/planethoster_api.svg)
-![Gem](https://img.shields.io/gem/dt/planethoster_api.svg)
+[![Gem Version](https://badge.fury.io/rb/planethoster_api.svg)](https://badge.fury.io/rb/planethoster_api)
+[![Gem](https://img.shields.io/gem/dt/planethoster_api.svg)](https://rubygems.org/gems/planethoster_api)
 
 # Planethoster-ruby
 
