@@ -6,16 +6,7 @@ orbs:
   ruby: circleci/ruby@1.8.0
 
 jobs:
-  build:
-    parameters:
-      ruby-version:
-        type: string
-    docker:
-      - image: cimg/ruby:<< parameters.ruby-version >>
-    steps:
-      - checkout
-      - ruby/install-deps
-  test:
+  build_and_test:
     parameters:
       ruby-version:
         type: string
@@ -30,13 +21,7 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - build:
+      - build_and_test:
           matrix:
               parameters:
                 ruby-version: ["2.7", "3.0", "3.1"]
-      - test:
-          matrix:
-              parameters:
-                ruby-version: ["2.7", "3.0", "3.1"]
-          requires:
-            - build
