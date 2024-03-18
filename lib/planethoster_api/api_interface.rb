@@ -11,10 +11,9 @@ module PlanethosterApi
     def test_connection
       @api_client.call(
         :get,
-        "/reseller-api/test-connection",
+        '/reseller-api/test-connection',
         {}
       )
     end
-
   end
 end

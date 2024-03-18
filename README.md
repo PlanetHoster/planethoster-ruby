@@ -31,7 +31,7 @@ You need to initialize api credentials.
 ```ruby
 require 'planethoster_api'
 
-PlanethosterApi.configuration do |config|
+PlanethosterApi.configure do |config|
     config.api_user = API_USER
     config.api_key = API_KEY
 end
