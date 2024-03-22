@@ -1,12 +1,11 @@
 require 'net/http'
-require 'dotenv/load'
 require 'json'
 
 module Utilities
   class ApiClient
     include Net
 
-    BASE_URL = ENV['API_URL'] || 'https://api.planethoster.net'
+    BASE_URL = 'https://api.planethoster.net'.freeze
 
     def initialize(api_user, api_key)
       @headers = {
