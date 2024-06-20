@@ -4,9 +4,8 @@ module PlanethosterApi
 
     # Empty strings if not defined
     def initialize
-      @api_user = ""
-      @api_key = ""
+      @api_user = ''
+      @api_key = ''
     end
-
   end
 end
