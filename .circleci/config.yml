@@ -3,7 +3,7 @@
 version: 2.1
 
 orbs:
-  ruby: circleci/ruby@2.1.1
+  ruby: circleci/ruby@2.2.1
 
 jobs:
   build_and_test:
